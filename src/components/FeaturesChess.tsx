@@ -46,10 +46,10 @@ function ChessRow({ title, body, cta, gif, reverse = false }: RowProps) {
         <motion.div variants={fadeUp} transition={{ duration: 0.6 }}>
           <a
             href="#contact"
-            className="liquid-glass-strong rounded-full px-5 py-2.5 text-black text-sm font-body font-medium flex items-center gap-2 w-fit"
+            className="liquid-glass-strong rounded-full px-5 py-2.5 text-black text-sm font-body font-medium flex items-center gap-2 w-fit hover:bg-[#3c3b6e] hover:text-white transition duration-300"
           >
             {cta}
-            <ArrowUpRight size={16} />
+            <ArrowUpRight size={16} className='hover:bg-[#3c3b6e] hover:text-white' />
           </a>
         </motion.div>
       </div>

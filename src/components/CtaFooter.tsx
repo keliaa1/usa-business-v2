@@ -5,11 +5,11 @@ export default function CtaFooter() {
   return (
     <footer id="contact" className="relative bg-[#f8f9fa] overflow-hidden border-t border-black/5">
       {/* Background Glows */}
-      <div 
+      <div
         className="absolute top-1/4 left-[-10%] w-[500px] h-[500px] rounded-full blur-[150px] pointer-events-none opacity-20"
         style={{ backgroundColor: '#3c3b6e' }}
       />
-      <div 
+      <div
         className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-gradient-to-tr from-pink-300 via-red-300 to-green-300 rounded-full blur-[130px] opacity-30 pointer-events-none"
       />
 
@@ -17,10 +17,10 @@ export default function CtaFooter() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {/* Left Column */}
           <div className="flex flex-col justify-start">
-            <h2 className="text-6xl md:text-[5rem] font-heading italic text-black leading-[1.1] tracking-tight mb-16">
+            <h2 className="text-6xl md:text-[5rem] font-heading italic text-[#3c3b6e] leading-[1.1] tracking-tight mb-16">
               <BlurText text="Get in touch." delay={100} />
             </h2>
-            
+
             {/* Dot Grid Pattern */}
             <svg className="w-64 h-48 opacity-20" xmlns="http://www.w3.org/2000/svg">
               <defs>

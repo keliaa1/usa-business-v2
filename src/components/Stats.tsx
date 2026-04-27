@@ -35,7 +35,7 @@ export default function Stats() {
           className="liquid-glass rounded-3xl p-12 md:p-16"
         >
           <div className="text-center mb-12">
-            <span className="section-badge">By the numbers</span>
+            <span className="section-badge text-[#3c3b6e]">By the numbers</span>
             <h2 className="section-heading mt-4">
               <BlurText text="Results that speak." delay={100} />
             </h2>

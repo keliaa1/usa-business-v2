@@ -32,7 +32,7 @@ export default function Testimonials() {
     <section className="px-8 lg:px-16 py-24 max-w-7xl mx-auto">
       {/* Section header */}
       <div className="flex flex-col items-center text-center gap-4 mb-16">
-        <span className="section-badge">What They Say</span>
+        <span className="section-badge text-[#3c3b6e]">What They Say</span>
         <h2 className="section-heading max-w-xl">
           <BlurText text="Don't take our word for it." delay={100} />
         </h2>
@@ -56,7 +56,7 @@ export default function Testimonials() {
               &ldquo;{quote}&rdquo;
             </p>
             <div>
-              <p className="text-black font-body font-medium text-sm">{name}</p>
+              <p className="text-[#3c3b6e] font-body font-medium text-sm">{name}</p>
               <p className="text-black/50 font-body font-light text-xs mt-0.5">{role}</p>
             </div>
           </motion.div>

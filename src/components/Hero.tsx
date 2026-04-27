@@ -53,7 +53,7 @@ export default function Hero() {
             New
           </span>
           <span className="text-black/80 text-xs font-body pr-2">
-            Introducing AI-powered web design.
+            Introducing My USA Business
           </span>
         </motion.div>
 
@@ -94,7 +94,7 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="liquid-glass-strong rounded-full px-5 py-2.5 text-black font-bold text-sm font-body flex items-center gap-2 cursor-pointer"
+            className="liquid-glass-strong rounded-full px-5 py-2.5 text-black font-bold text-sm font-body flex items-center gap-2 cursor-pointer bg-[#3c3b6e] text-white"
           >
             Get Started
             <ArrowUpRight size={16} />

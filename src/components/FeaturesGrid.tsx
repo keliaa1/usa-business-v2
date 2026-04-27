@@ -37,7 +37,7 @@ export default function FeaturesGrid() {
     <section id="why-choose-us" className="px-8 lg:px-16 py-24 max-w-7xl mx-auto">
       {/* Section header */}
       <div className="flex flex-col items-center text-center gap-4 mb-16">
-        <span className="section-badge">Why Choose Us</span>
+        <span className="section-badge text-[#3c3b6e]">Why Choose Us</span>
         <h2 className="section-heading max-w-xl">
           <BlurText text="The difference is everything." delay={110} />
         </h2>
