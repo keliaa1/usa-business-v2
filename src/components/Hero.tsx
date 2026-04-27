@@ -2,8 +2,6 @@ import { motion } from 'motion/react'
 import { ArrowUpRight, Play } from 'lucide-react'
 import BlurText from './BlurText'
 
-const partners = ['Stripe', 'Vercel', 'Linear', 'Notion', 'Figma']
-
 const blurIn = {
   hidden: { filter: 'blur(10px)', opacity: 0, y: 20 },
   visible: { filter: 'blur(0px)', opacity: 1, y: 0 },
