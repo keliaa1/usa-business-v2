@@ -32,7 +32,7 @@ function ChessRow({ title, body, cta, gif, reverse = false }: RowProps) {
         <motion.h3
           variants={fadeUp}
           transition={{ duration: 0.6 }}
-          className="text-3xl md:text-4xl font-heading italic text-white leading-tight tracking-tight"
+          className="text-3xl md:text-4xl font-heading italic text-black leading-tight tracking-tight"
         >
           {title}
         </motion.h3>
@@ -46,7 +46,7 @@ function ChessRow({ title, body, cta, gif, reverse = false }: RowProps) {
         <motion.div variants={fadeUp} transition={{ duration: 0.6 }}>
           <a
             href="#contact"
-            className="liquid-glass-strong rounded-full px-5 py-2.5 text-white text-sm font-body font-medium flex items-center gap-2 w-fit"
+            className="liquid-glass-strong rounded-full px-5 py-2.5 text-black text-sm font-body font-medium flex items-center gap-2 w-fit"
           >
             {cta}
             <ArrowUpRight size={16} />

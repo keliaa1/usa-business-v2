@@ -21,7 +21,7 @@ export default function Navbar() {
           <a
             key={link}
             href={`#${link.toLowerCase().replace(/\s+/g, '-')}`}
-            className="px-3 py-2 text-sm font-medium text-white/90 font-body rounded-full hover:bg-white/10 transition-colors duration-200"
+            className="px-3 py-2 text-sm font-medium text-black/90 font-body rounded-full hover:bg-black/10 transition-colors duration-200"
           >
             {link}
           </a>
@@ -31,7 +31,7 @@ export default function Navbar() {
         <div className="relative ml-1">
           <button
             onClick={() => setLangOpen(!langOpen)}
-            className="flex items-center gap-1.5 bg-white text-black rounded-full px-3.5 py-1.5 text-sm font-medium font-body hover:bg-white/90 transition-colors duration-200"
+            className="flex items-center gap-1.5 bg-black text-white rounded-full px-3.5 py-1.5 text-sm font-medium font-body hover:bg-black/90 transition-colors duration-200"
           >
             <Globe size={14} />
             {language}
@@ -68,7 +68,7 @@ export default function Navbar() {
       <div className="md:hidden relative">
         <button
           onClick={() => setLangOpen(!langOpen)}
-          className="flex items-center gap-1.5 bg-white text-black rounded-full px-3.5 py-1.5 text-sm font-medium font-body"
+          className="flex items-center gap-1.5 bg-black text-white rounded-full px-3.5 py-1.5 text-sm font-medium font-body"
         >
           <Globe size={14} />
           {language}

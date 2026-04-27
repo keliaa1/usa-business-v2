@@ -9,11 +9,11 @@ import CtaFooter from './components/CtaFooter'
 
 function App() {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="bg-[#f8f9fa] min-h-screen">
       <div className="relative z-10">
         <Navbar />
         <Hero />
-        <div className="bg-black">
+        <div className="bg-[#f8f9fa]">
           <FeaturesChess />
           <FeaturesGrid />
           <Stats />

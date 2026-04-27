@@ -30,8 +30,8 @@ export default function Hero() {
         />
       </video>
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/5 z-0" />
+      {/* Dark overlay -> Light overlay */}
+      <div className="absolute inset-0 bg-white/50 z-0" />
 
       {/* Bottom gradient fade */}
       <div
@@ -51,23 +51,23 @@ export default function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex items-center gap-2 liquid-glass rounded-full px-1 py-1 mb-8"
         >
-          <span className="bg-white text-black rounded-full px-3 py-1 text-xs font-semibold font-body">
+          <span className="bg-black text-white rounded-full px-3 py-1 text-xs font-semibold font-body">
             New
           </span>
-          <span className="text-white/80 text-xs font-body pr-2">
+          <span className="text-black/80 text-xs font-body pr-2">
             Introducing AI-powered web design.
           </span>
         </motion.div>
 
-        <h1 className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-white leading-[0.8] tracking-[-4px] mb-6 flex flex-col items-center">
+        <h1 className="text-6xl md:text-7xl lg:text-[5.5rem] font-heading italic text-black leading-[0.8] tracking-[-4px] mb-6 flex flex-col items-center">
           <BlurText
-            text="The Website Your Brand"
+            text="Start your own business"
             delay={100}
             direction="bottom"
             animateBy="words"
           />
           <BlurText
-            text="Deserves"
+            text="in the United States"
             delay={100}
             direction="bottom"
             animateBy="words"
@@ -81,10 +81,9 @@ export default function Hero() {
           initial="hidden"
           animate="visible"
           transition={{ duration: 0.6, delay: 0.8 }}
-          className="text-sm md:text-base text-white font-body font-light leading-tight max-w-md mb-8"
+          className="text-sm md:text-base text-black/90 font-body font-light leading-tight max-w-md mb-8"
         >
-          Stunning design. Blazing performance. Built by AI, refined by experts.{' '}
-          This is web design, wildly reimagined.
+          As a foreigner. We specialize in creating and structuring businesses of all sizes, from small and medium-sized enterprises to large corporations, in the United States and the Caribbean.
         </motion.p>
 
         {/* CTA Buttons */}
@@ -97,39 +96,19 @@ export default function Hero() {
         >
           <a
             href="#contact"
-            className="liquid-glass-strong rounded-full px-5 py-2.5 text-white text-sm font-body font-medium flex items-center gap-2 cursor-pointer"
+            className="liquid-glass-strong rounded-full px-5 py-2.5 text-black font-bold text-sm font-body flex items-center gap-2 cursor-pointer"
           >
             Get Started
             <ArrowUpRight size={16} />
           </a>
-          <button className="flex items-center gap-2 text-white text-sm font-body font-light cursor-pointer">
-            <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
-              <Play size={12} fill="white" className="ml-0.5" />
+          <button className="flex items-center gap-2 text-black text-sm font-body font-medium cursor-pointer">
+            <div className="w-8 h-8 rounded-full bg-black/10 flex items-center justify-center">
+              <Play size={12} fill="black" className="ml-0.5" />
             </div>
             Watch the Film
           </button>
         </motion.div>
 
-        {/* Partners bar */}
-        <motion.div
-          variants={blurIn}
-          initial="hidden"
-          animate="visible"
-          transition={{ duration: 0.6, delay: 1.4 }}
-          className="mt-auto pt-16 pb-8 flex flex-col items-center gap-6"
-          style={{ marginTop: '80px' }}
-        >
-          <span className="liquid-glass rounded-full px-3.5 py-1 text-xs font-body text-white/70">
-            Trusted by the teams behind
-          </span>
-          <div className="flex items-center gap-12 md:gap-16">
-            {partners.map((p) => (
-              <span key={p} className="text-2xl md:text-3xl font-heading italic text-white">
-                {p}
-              </span>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   )

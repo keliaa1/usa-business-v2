@@ -58,9 +58,9 @@ export default function FeaturesGrid() {
             className="liquid-glass rounded-2xl p-8 flex flex-col gap-4"
           >
             <div className="liquid-glass-strong rounded-full w-12 h-12 flex items-center justify-center mb-2">
-              <Icon size={20} className="text-white" />
+              <Icon size={20} className="text-black" />
             </div>
-            <h3 className="text-white font-body font-semibold text-lg">{title}</h3>
+            <h3 className="text-black font-body font-semibold text-lg">{title}</h3>
             <p className="section-body text-sm leading-relaxed">{body}</p>
           </motion.div>
         ))}

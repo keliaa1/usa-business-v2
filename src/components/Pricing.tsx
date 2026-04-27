@@ -8,7 +8,7 @@ export default function Pricing() {
       {/* Background ambient glow matching the #1d4ed8 color */}
       <div 
         className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full blur-[120px] pointer-events-none opacity-20"
-        style={{ backgroundColor: '#1d4ed8' }}
+        style={{ backgroundColor: '#3c3b6e' }}
       />
 
       {/* Section header */}
@@ -27,47 +27,47 @@ export default function Pricing() {
         className="relative z-10 w-full max-w-sm"
       >
         <div 
-          className="rounded-3xl p-8 border border-white/10 relative overflow-hidden"
+          className="rounded-3xl p-8 border border-black/10 relative overflow-hidden"
           style={{
-            background: 'linear-gradient(180deg, rgba(29, 78, 216, 0.15) 0%, rgba(0, 0, 0, 0.5) 100%)',
-            boxShadow: '0 8px 32px rgba(29, 78, 216, 0.15)'
+            background: 'linear-gradient(180deg, rgba(60, 59, 110, 0.1) 0%, rgba(255, 255, 255, 0.8) 100%)',
+            boxShadow: '0 8px 32px rgba(60, 59, 110, 0.1)'
           }}
         >
           {/* Top glow inside the card */}
           <div 
             className="absolute -top-24 -right-24 w-48 h-48 rounded-full blur-[50px] opacity-40"
-            style={{ backgroundColor: '#1d4ed8' }}
+            style={{ backgroundColor: '#3c3b6e' }}
           />
 
           <div className="flex items-center justify-between mb-4 relative z-10">
-            <h3 className="text-white text-xl font-body font-semibold">Pro</h3>
+            <h3 className="text-black text-xl font-body font-semibold">Pro</h3>
             <span 
               className="text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full text-white"
-              style={{ backgroundColor: '#1d4ed8' }}
+              style={{ backgroundColor: '#3c3b6e' }}
             >
               Most Popular
             </span>
           </div>
 
-          <p className="text-white/60 text-sm font-body font-light mb-6">Billed monthly</p>
+          <p className="text-black/60 text-sm font-body font-light mb-6">Billed monthly</p>
 
           <div className="flex items-end gap-2 mb-4">
-            <span className="text-5xl font-heading italic text-white">$19</span>
-            <span className="text-white/60 font-body text-sm mb-1.5">/ month</span>
+            <span className="text-5xl font-heading italic text-black">$19</span>
+            <span className="text-black/60 font-body text-sm mb-1.5">/ month</span>
           </div>
 
-          <p className="text-white/60 text-sm font-body font-light pb-8 border-b border-white/10 mb-8">
+          <p className="text-black/60 text-sm font-body font-light pb-8 border-b border-black/10 mb-8">
             Ideal for small teams.
           </p>
 
           <ul className="flex flex-col gap-4 mb-10">
             {['Access to all features', 'Up to 10 users', '5GB data per user', 'Priority support'].map((feature) => (
-              <li key={feature} className="flex items-center gap-3 text-white/80 font-body text-sm">
+              <li key={feature} className="flex items-center gap-3 text-black/80 font-body text-sm">
                 <div 
-                  className="w-5 h-5 rounded-full flex items-center justify-center border border-[#1d4ed8]"
-                  style={{ backgroundColor: 'rgba(29, 78, 216, 0.15)' }}
+                  className="w-5 h-5 rounded-full flex items-center justify-center border"
+                  style={{ backgroundColor: 'rgba(60, 59, 110, 0.15)', borderColor: '#3c3b6e' }}
                 >
-                  <Check size={12} color="#1d4ed8" strokeWidth={3} />
+                  <Check size={12} color="#3c3b6e" strokeWidth={3} />
                 </div>
                 {feature}
               </li>
@@ -76,7 +76,7 @@ export default function Pricing() {
 
           <button 
             className="w-full rounded-full py-3.5 text-white font-body font-medium text-sm transition-transform hover:scale-[1.02] active:scale-[0.98]"
-            style={{ backgroundColor: '#1d4ed8' }}
+            style={{ backgroundColor: '#3c3b6e' }}
           >
             Get it now
           </button>

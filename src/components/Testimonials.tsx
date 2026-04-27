@@ -52,12 +52,12 @@ export default function Testimonials() {
             transition={{ duration: 0.5 }}
             className="liquid-glass rounded-2xl p-8 flex flex-col justify-between gap-6"
           >
-            <p className="text-white/80 font-body font-light text-sm italic leading-relaxed">
+            <p className="text-black/80 font-body font-light text-sm italic leading-relaxed">
               &ldquo;{quote}&rdquo;
             </p>
             <div>
-              <p className="text-white font-body font-medium text-sm">{name}</p>
-              <p className="text-white/50 font-body font-light text-xs mt-0.5">{role}</p>
+              <p className="text-black font-body font-medium text-sm">{name}</p>
+              <p className="text-black/50 font-body font-light text-xs mt-0.5">{role}</p>
             </div>
           </motion.div>
         ))}

@@ -43,10 +43,10 @@ export default function Stats() {
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
             {stats.map(({ value, label }) => (
               <div key={label} className="flex flex-col items-center text-center gap-2">
-                <span className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-white">
+                <span className="text-4xl md:text-5xl lg:text-6xl font-heading italic text-black">
                   {value}
                 </span>
-                <span className="text-white/60 font-body font-light text-sm">{label}</span>
+                <span className="text-black/60 font-body font-light text-sm">{label}</span>
               </div>
             ))}
           </div>
