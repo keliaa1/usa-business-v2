@@ -4,21 +4,21 @@ import BlurText from './BlurText'
 const testimonials = [
   {
     quote:
-      'A complete rebuild in five days. The result outperformed everything we\'d spent months building before.',
+      'I couldn\'t believe how quickly they got everything done. We had our business registered and operating in the US within a week. Their team handles all the paperwork and makes the entire process feel effortless.',
     name: 'Sarah Chen',
     role: 'CEO, Luminary',
   },
   {
     quote:
-      'Conversions up 4x. That\'s not a typo. The design just works differently when it\'s built on real data.',
+      'My bank account was set up in less than 24 hours. I was worried about the process as a foreigner, but their team made everything so simple and clear. I was able to start receiving payments for my services almost immediately.',
     name: 'Marcus Webb',
-    role: 'Head of Growth, Arcline',
+    role: 'CEO, Arcline',
   },
   {
     quote:
-      'They didn\'t just design our site. They defined our brand. World-class doesn\'t begin to cover it.',
+      'The level of personalized support I received was incredible. They guided me through every step of the process and answered all my questions patiently. I feel confident running my business in the US thanks to their expertise.',
     name: 'Elena Voss',
-    role: 'Brand Director, Helix',
+    role: 'CEO, Helix',
   },
 ]
 

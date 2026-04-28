@@ -70,10 +70,10 @@ function ChessRow({ title, body, cta, gif, reverse = false }: RowProps) {
 
 export default function FeaturesChess() {
   return (
-    <section id="work" className="px-8 lg:px-16 py-24 max-w-7xl mx-auto">
+    <section id="benefits" className="px-8 lg:px-16 py-24 max-w-7xl mx-auto">
       {/* Section header */}
       <div className="flex flex-col items-center text-center gap-4 mb-20">
-        <span className="section-badge">Capabilities</span>
+        <span className="section-badge text-[#3c3b6e]">Benefits</span>
         <h2 className="section-heading max-w-xl">
           <BlurText text="Pro features. Zero complexity." delay={110} />
         </h2>
