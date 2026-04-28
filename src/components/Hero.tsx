@@ -15,7 +15,7 @@ export default function Hero() {
       style={{ minHeight: '100vh' }}
     >
       {/* Background Video */}
-      <video
+      {/* <video
         autoPlay
         loop
         muted
@@ -26,7 +26,10 @@ export default function Hero() {
           src="https://assets.mixkit.co/videos/preview/mixkit-network-of-lines-and-dots-in-a-dark-space-114-large.mp4"
           type="video/mp4"
         />
-      </video>
+      </video> */}
+      <img src="../src/assets/businessmen.jpg" className="absolute top-0 left-0 w-full h-full object-cover z-0">
+
+      </img>
 
       {/* Dark overlay -> Light overlay */}
       <div className="absolute inset-0 bg-white/50 z-0" />

@@ -44,7 +44,7 @@ export default function Pricing() {
           />
 
           <div className="flex items-center justify-between mb-4 relative z-10">
-            <h3 className="text-black text-xl font-body font-semibold">Pro</h3>
+            <h3 className="text-black text-xl font-body font-semibold">New Business</h3>
             <span
               className="text-[10px] uppercase tracking-wider font-bold px-3 py-1 rounded-full text-white"
               style={{ backgroundColor: "#3c3b6e" }}
@@ -54,26 +54,28 @@ export default function Pricing() {
           </div>
 
           <p className="text-black/60 text-sm font-body font-light mb-6">
-            Billed monthly
+            Billed yearly
           </p>
 
           <div className="flex items-end gap-2 mb-4">
-            <span className="text-5xl font-heading italic text-black">$19</span>
+            <span className="text-5xl font-heading italic text-black">$600</span>
             <span className="text-black/60 font-body text-sm mb-1.5">
-              / month
+              / yearly
             </span>
           </div>
 
           <p className="text-black/60 text-sm font-body font-light pb-8 border-b border-black/10 mb-8">
-            Ideal for small teams.
+            Ideal for new businesses
           </p>
 
           <ul className="flex flex-col gap-4 mb-10">
             {[
-              "Access to all features",
-              "Up to 10 users",
-              "5GB data per user",
-              "Priority support",
+              "Company creation with EIN",
+              "Legal managements",
+              "Resident Agent",
+              "Federal and state obligations",
+              "Full payment of expenses",
+              "Personalized attention from an advisor",
             ].map((feature) => (
               <li
                 key={feature}

@@ -5,7 +5,7 @@ import BlurText from './BlurText'
 const HLS_URL = 'https://stream.mux.com/NcU3HlHeF7CUL86azTTzpy3Tlb00d6iF3BmCdFslMJYM.m3u8'
 
 const stats = [
-  { value: '200+', label: 'Sites launched' },
+  { value: '200+', label: 'Accounts launched' },
   { value: '98%', label: 'Client satisfaction' },
   { value: '3.2x', label: 'More conversions' },
   { value: '5 days', label: 'Average delivery' },
