@@ -4,6 +4,7 @@ import BlurText from './BlurText'
 import bitcoinGif from '../assets/bitcoin.gif'
 import businessGif from '../assets/business.gif'
 import creditcardGif from '../assets/creditcard.gif'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -69,35 +70,37 @@ function ChessRow({ title, body, cta, gif, reverse = false }: RowProps) {
 }
 
 export default function FeaturesChess() {
+  const { t } = useLanguage()
+
   return (
     <section id="benefits" className="px-8 lg:px-16 py-24 max-w-7xl mx-auto">
       {/* Section header */}
       <div className="flex flex-col items-center text-center gap-4 mb-20">
-        <span className="section-badge text-[#3c3b6e]">Benefits</span>
+        <span className="section-badge text-[#3c3b6e]">{t.featuresChess.badge}</span>
         <h2 className="section-heading max-w-xl">
-          <BlurText text="Pro features. Zero complexity." delay={110} />
+          <BlurText text={t.featuresChess.heading} delay={110} />
         </h2>
       </div>
 
       <ChessRow
-        title="Opening a Bank Account"
-        body="At My USA Business, we offer easy and secure solutions for opening US bank accounts, offshore accounts, and crypto accounts for both individuals and businesses. Open a US account to access global financial services, enjoy the flexibility of offshore accounts, or manage your digital assets with crypto accounts."
-        cta="Open an account"
+        title={t.featuresChess.row1.title}
+        body={t.featuresChess.row1.body}
+        cta={t.featuresChess.row1.cta}
         gif={bitcoinGif}
       />
 
       <ChessRow
-        title="Create or expand your business into the international market."
-        body="We provide you with the tools and support you need as an entrepreneur, business owner, or investor to achieve your goals and discover endless opportunities. Access international financial markets and take your business to the next level with us"
-        cta="See how it works"
+        title={t.featuresChess.row2.title}
+        body={t.featuresChess.row2.body}
+        cta={t.featuresChess.row2.cta}
         gif={businessGif}
         reverse
       />
 
       <ChessRow
-        title="Receive payments directly into your account in dollars"
-        body="Offer your customers all payment methods: credit or debit card, cryptocurrency, Zelle and many more, so you can receive your payments quickly and securely, no matter which channel your customers choose."
-        cta="View features"
+        title={t.featuresChess.row3.title}
+        body={t.featuresChess.row3.body}
+        cta={t.featuresChess.row3.cta}
         gif={creditcardGif}
       />
     </section>

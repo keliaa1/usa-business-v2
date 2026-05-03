@@ -1,7 +1,10 @@
 import { MapPin, Phone, Mail, ThumbsUp } from 'lucide-react'
 import BlurText from './BlurText'
+import { useLanguage } from '../contexts/LanguageContext'
 
 export default function CtaFooter() {
+  const { t } = useLanguage()
+
   return (
     <footer id="contact" className="relative bg-[#f8f9fa] overflow-hidden border-t border-black/5">
       {/* Background Glows */}
@@ -13,12 +16,12 @@ export default function CtaFooter() {
         className="absolute bottom-1/4 right-0 w-[400px] h-[400px] bg-gradient-to-tr from-pink-300 via-red-300 to-green-300 rounded-full blur-[130px] opacity-30 pointer-events-none"
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-16 pt-32 pb-16">
+      <div className="relative z-10 max-w-7xl mx-auto px-8 lg:px-16 pt-52 pb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {/* Left Column */}
           <div className="flex flex-col justify-start">
             <h2 className="text-6xl md:text-[5rem] font-heading italic text-[#3c3b6e] leading-[1.1] tracking-tight mb-16">
-              <BlurText text="Get in touch." delay={100} />
+              <BlurText text={t.footer.heading} delay={100} />
             </h2>
 
             {/* Dot Grid Pattern */}
@@ -40,7 +43,7 @@ export default function CtaFooter() {
                 <MapPin size={28} strokeWidth={1.5} />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-black font-body font-bold text-2xl mb-2 tracking-tight">Address</h3>
+                <h3 className="text-black font-body font-bold text-2xl mb-2 tracking-tight">{t.footer.address}</h3>
                 <p className="text-black/60 font-body text-sm mb-0.5">London</p>
                 <p className="text-black/60 font-body text-sm">25 Wilton Road, Victoria, London, SW1V 1LW</p>
               </div>
@@ -52,7 +55,7 @@ export default function CtaFooter() {
                 <Phone size={28} strokeWidth={1.5} />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-black font-body font-bold text-2xl mb-2 tracking-tight">Phone</h3>
+                <h3 className="text-black font-body font-bold text-2xl mb-2 tracking-tight">{t.footer.phone}</h3>
                 <p className="text-black/60 font-body text-sm">+44 7551 450 400</p>
               </div>
             </div>
@@ -63,7 +66,7 @@ export default function CtaFooter() {
                 <Mail size={28} strokeWidth={1.5} />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-black font-body font-bold text-2xl mb-2 tracking-tight">Mail</h3>
+                <h3 className="text-black font-body font-bold text-2xl mb-2 tracking-tight">{t.footer.mail}</h3>
                 <a href="mailto:hello@baseone.uk" className="text-black/60 hover:text-black transition-colors font-body text-sm">
                   hello@baseone.uk
                 </a>
@@ -76,7 +79,7 @@ export default function CtaFooter() {
                 <ThumbsUp size={28} strokeWidth={1.5} />
               </div>
               <div className="flex flex-col">
-                <h3 className="text-black font-body font-bold text-2xl mb-4 tracking-tight">Follow Us</h3>
+                <h3 className="text-black font-body font-bold text-2xl mb-4 tracking-tight">{t.footer.followUs}</h3>
                 <div className="flex gap-3">
                   <a href="#" className="w-10 h-10 rounded-full bg-black flex items-center justify-center hover:scale-105 transition-transform text-white">
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
@@ -96,12 +99,12 @@ export default function CtaFooter() {
         {/* Footer bar */}
         <div className="w-full flex flex-col md:flex-row items-center justify-between pt-16 mt-16 border-t border-black/10">
           <p className="text-black/40 text-xs font-body mb-4 md:mb-0">
-            &copy; 2026 Studio. All rights reserved.
+            &copy; 2026 My USA Business. {t.footer.rights}
           </p>
-          <div className="flex items-center gap-6">
-            <a href="#" className="text-black/40 hover:text-black transition-colors text-xs font-body">Privacy</a>
-            <a href="#" className="text-black/40 hover:text-black transition-colors text-xs font-body">Terms</a>
-            <a href="#" className="text-black/40 hover:text-black transition-colors text-xs font-body">Contact</a>
+          <div className="items-center gap-6 hidden md:flex">
+            <a href="#" className="text-black/40 hover:text-black transition-colors text-xs font-body">{t.footer.privacy}</a>
+            <a href="#" className="text-black/40 hover:text-black transition-colors text-xs font-body">{t.footer.terms}</a>
+            <a href="#" className="text-black/40 hover:text-black transition-colors text-xs font-body">{t.footer.contact}</a>
           </div>
         </div>
       </div>

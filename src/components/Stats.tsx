@@ -1,17 +1,20 @@
 import { motion } from 'motion/react'
 import HlsVideo from './HlsVideo'
 import BlurText from './BlurText'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const HLS_URL = 'https://stream.mux.com/NcU3HlHeF7CUL86azTTzpy3Tlb00d6iF3BmCdFslMJYM.m3u8'
 
-const stats = [
-  { value: '200+', label: 'Accounts launched' },
-  { value: '98%', label: 'Client satisfaction' },
-  { value: '3.2x', label: 'More conversions' },
-  { value: '5 days', label: 'Average delivery' },
-]
-
 export default function Stats() {
+  const { t } = useLanguage()
+
+  const stats = [
+    { value: '200+', label: t.stats.stat1 },
+    { value: '98%', label: t.stats.stat2 },
+    { value: '3.2x', label: t.stats.stat3 },
+    { value: '5 days', label: t.stats.stat4 },
+  ]
+
   return (
     <section className="relative py-32">
       {/* Desaturated HLS video background */}
@@ -35,9 +38,9 @@ export default function Stats() {
           className="liquid-glass rounded-3xl p-12 md:p-16"
         >
           <div className="text-center mb-12">
-            <span className="section-badge text-[#3c3b6e]">By the numbers</span>
+            <span className="section-badge text-[#3c3b6e]">{t.stats.badge}</span>
             <h2 className="section-heading mt-4">
-              <BlurText text="Results that speak." delay={100} />
+              <BlurText text={t.stats.heading} delay={100} />
             </h2>
           </div>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">

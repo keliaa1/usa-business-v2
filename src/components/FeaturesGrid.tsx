@@ -2,6 +2,7 @@ import { Briefcase, Shield, Lock } from 'lucide-react'
 import { motion } from 'motion/react'
 import BlurText from './BlurText'
 import type { LucideIcon } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 interface CardProps {
   icon: LucideIcon
@@ -9,37 +10,39 @@ interface CardProps {
   body: string
 }
 
-const cards: CardProps[] = [
-  {
-    icon: Briefcase,
-    title: 'Business Bank Account',
-    body: 'Open your business bank account effortlessly with our integrated banking solutions designed for modern companies.',
-  },
-  {
-    icon: Shield,
-    title: 'Asset Protection',
-    body: 'Safeguard your hard-earned assets. Our structures offer robust legal frameworks to ensure your wealth remains untouchable.',
-  },
-  {
-    icon: Lock,
-    title: 'Privacy Protection',
-    body: 'Maintain your anonymity. We ensure your personal information remains strictly confidential across all public records.',
-  },
-]
-
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0 },
 }
 
 export default function FeaturesGrid() {
+  const { t } = useLanguage()
+
+  const cards: CardProps[] = [
+    {
+      icon: Briefcase,
+      title: t.featuresGrid.card1.title,
+      body: t.featuresGrid.card1.body,
+    },
+    {
+      icon: Shield,
+      title: t.featuresGrid.card2.title,
+      body: t.featuresGrid.card2.body,
+    },
+    {
+      icon: Lock,
+      title: t.featuresGrid.card3.title,
+      body: t.featuresGrid.card3.body,
+    },
+  ]
+
   return (
     <section id="why-choose-us" className="px-8 lg:px-16 py-24 max-w-7xl mx-auto">
       {/* Section header */}
       <div className="flex flex-col items-center text-center gap-4 mb-16">
-        <span className="section-badge text-[#3c3b6e]">Why Choose Us</span>
+        <span className="section-badge text-[#3c3b6e]">{t.featuresGrid.badge}</span>
         <h2 className="section-heading max-w-xl">
-          <BlurText text="The difference is everything." delay={110} />
+          <BlurText text={t.featuresGrid.heading} delay={110} />
         </h2>
       </div>
 
