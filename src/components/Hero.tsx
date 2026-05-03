@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'motion/react'
 import { ArrowUpRight, Play, MapPin, ChevronDown } from 'lucide-react'
 import BlurText from './BlurText'
 import { useLanguage } from '../contexts/LanguageContext'
+import heroVideo from '../assets/businessmenvid.mp4'
 
 const US_STATES = [
   "Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", "Delaware", 
@@ -37,7 +38,7 @@ export default function Hero() {
         playsInline 
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src="/src/assets/businessmenvid.mp4" type="video/mp4" />
+        <source src={heroVideo} type="video/mp4" />
       </video>
       {/* Dark overlay -> Light overlay */}
       <div className="absolute inset-0 bg-white/50 z-0" />
