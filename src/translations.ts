@@ -98,6 +98,27 @@ export const translations = {
         },
       ],
     },
+    whyChooseUs: {
+      badge: 'Why Choose Us',
+      heading: 'The difference is everything.',
+      card1: {
+        title: 'Tailored Strategy',
+        body: 'Handcrafted business structures designed to deliver timeless growth and unmatched legal security.',
+        cta: 'Explore Solutions',
+      },
+      card2: {
+        title: 'Global Trust',
+        body: 'Trusted by entrepreneurs and innovators worldwide to bridge the gap to the US market.',
+      },
+      card3: {
+        title: '100%',
+        body: 'Success rate in US bank account openings and business incorporations.',
+      },
+      card4: {
+        title: 'Visionary Growth',
+        body: 'Elevates your business potential and transforms your international presence into a statement of success.',
+      },
+    },
     footer: {
       heading: 'Get in touch.',
       address: 'Address',
@@ -208,6 +229,27 @@ export const translations = {
           role: 'CEO, Helix',
         },
       ],
+    },
+    whyChooseUs: {
+      badge: 'Por qué elegirnos',
+      heading: 'La diferencia lo es todo.',
+      card1: {
+        title: 'Estrategia a medida',
+        body: 'Estructuras de negocio artesanales diseñadas para ofrecer un crecimiento atemporal y una seguridad legal inigualable.',
+        cta: 'Explorar soluciones',
+      },
+      card2: {
+        title: 'Confianza Global',
+        body: 'Confiado por emprendedores e innovadores de todo el mundo para cerrar la brecha con el mercado estadounidense.',
+      },
+      card3: {
+        title: '100%',
+        body: 'Tasa de éxito en aperturas de cuentas bancarias y constituciones de empresas en EE. UU.',
+      },
+      card4: {
+        title: 'Crecimiento Visionario',
+        body: 'Eleva el potencial de tu negocio y transforma tu presencia internacional en una declaración de éxito.',
+      },
     },
     footer: {
       heading: 'Ponte en contacto.',
