@@ -135,7 +135,7 @@ export default function Hero() {
                   <MapPin size={16} />
                 </div>
                 <span className="truncate max-w-[150px]">
-                  {selectedState ? selectedState : "Incorporate In..."}
+                  {selectedState ? selectedState : t.hero.incorporateIn}
                 </span>
               </div>
               <ChevronDown size={18} className={`transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`} />

@@ -14,6 +14,7 @@ export const translations = {
       subtitle: 'As a foreigner. We specialize in creating and structuring businesses of all sizes, from small and medium-sized enterprises to large corporations, in the United States and the Caribbean.',
       cta: 'Get Started',
       watchFilm: 'Watch the Film',
+      incorporateIn: 'Incorporate In...',
     },
     featuresChess: {
       badge: 'Benefits',
@@ -108,7 +109,8 @@ export const translations = {
       },
       card2: {
         title: 'Global Trust',
-        body: 'Trusted by entrepreneurs and innovators worldwide to bridge the gap to the US market.',
+        prefix: 'Trusted by',
+        body: 'entrepreneurs & innovators worldwide.',
       },
       card3: {
         title: '100%',
@@ -116,7 +118,9 @@ export const translations = {
       },
       card4: {
         title: 'Visionary Growth',
-        body: 'Elevates your business potential and transforms your international presence into a statement of success.',
+        body1: 'Elevates your business potential and',
+        highlight: 'transforms',
+        body2: 'your international presence into a statement of success.',
       },
     },
     footer: {
@@ -146,6 +150,7 @@ export const translations = {
       subtitle: 'Como extranjero. Nos especializamos en crear y estructurar negocios de todos los tamaños, desde pequeñas y medianas empresas hasta grandes corporaciones, en los Estados Unidos y el Caribe.',
       cta: 'Comenzar',
       watchFilm: 'Ver el video',
+      incorporateIn: 'Constituir en...',
     },
     featuresChess: {
       badge: 'Beneficios',
@@ -240,7 +245,8 @@ export const translations = {
       },
       card2: {
         title: 'Confianza Global',
-        body: 'Confiado por emprendedores e innovadores de todo el mundo para cerrar la brecha con el mercado estadounidense.',
+        prefix: 'Confiado por',
+        body: 'emprendedores e innovadores de todo el mundo.',
       },
       card3: {
         title: '100%',
@@ -248,7 +254,9 @@ export const translations = {
       },
       card4: {
         title: 'Crecimiento Visionario',
-        body: 'Eleva el potencial de tu negocio y transforma tu presencia internacional en una declaración de éxito.',
+        body1: 'Eleva el potencial de tu negocio y',
+        highlight: 'transforma',
+        body2: 'tu presencia internacional en una declaración de éxito.',
       },
     },
     footer: {

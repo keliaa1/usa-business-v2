@@ -65,7 +65,7 @@ export default function FeaturesGrid() {
           </div>
           <div className="relative z-10">
              <h3 className="text-white font-heading text-2xl max-w-[280px] leading-tight italic">
-              <span className="opacity-70">Trusted by</span> entrepreneurs & innovators worldwide.
+              <span className="opacity-70">{t.whyChooseUs.card2.prefix}</span> {t.whyChooseUs.card2.body}
             </h3>
           </div>
         </motion.div>
@@ -101,8 +101,8 @@ export default function FeaturesGrid() {
           </div>
           <div className="relative z-10 max-w-[400px]">
             <h3 className="text-white font-heading text-2xl leading-tight italic">
-              {t.whyChooseUs.card4.body.split('transforms')[0]}
-              <span className="opacity-60">transforms {t.whyChooseUs.card4.body.split('transforms')[1]}</span>
+              {t.whyChooseUs.card4.body1}{' '}
+              <span className="opacity-60">{t.whyChooseUs.card4.highlight} {t.whyChooseUs.card4.body2}</span>
             </h3>
           </div>
         </motion.div>
